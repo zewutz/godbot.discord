@@ -104,19 +104,5 @@ async def change_status():
   await client.change_presence(activity=discord.Game(next(bot_status)))
 
 
-# @client.event()
-# async def rainbowrole():
-#   colours = cycle(["#ff0000",
-#                     "#ffa500",
-#                     "#ffff00",
-#                     "#008000",
-#                     "#0000ff",
-#                     "#4b0082",
-#                     "#4b0082"])
-
-#   for role in guild.id(809125737041887308) :
-#     if role.name == 'TANK':
-#       await role.edit(colour=discord.Colour(next(colours)))
-
 web_server()
 client.run(os.getenv("TOKEN"))
